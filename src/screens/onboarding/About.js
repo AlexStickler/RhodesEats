@@ -46,8 +46,7 @@ export default class App extends Component {
         <TouchableHighlight style={styles.button} onPress={this.onPress} onPress={this.handleSubmit} underlayColor='#99d9f4'>
           <Text style={styles.buttonText}>Save</Text>
         </TouchableHighlight>
-        
-        
+                
       </View>
       
     </View>
@@ -57,8 +56,7 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-  },
-  
+  },  
   header: {
     backgroundColor: '#C70039',
     height: 120,
@@ -66,14 +64,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'left',
   },
-  
-    form: {
+  form: {
     justifyContent: 'center',
     marginTop: 0,
     padding: 30,
     backgroundColor: '#ffffff',
   },
-  
   paragraph: {
     margin: 52,
     fontSize: 25,
@@ -82,13 +78,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#FBFBFB',
   },
-  
-    buttonText: {
+  buttonText: {
     fontSize: 18,
     color: 'white',
     alignSelf: 'center'
   },
-  
   button: {
     height: 36,
     backgroundColor: '#48BBEC',
@@ -99,5 +93,4 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     justifyContent: 'center'
   }
-  
 });

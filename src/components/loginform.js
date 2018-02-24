@@ -14,7 +14,7 @@ export default class Loginform extends React.Component {
       <View style={styles.loginformcontainer}>
 
         <TextInput underlineColorAndroid='transparent' placeholder ='Email' style={styles.textinput} />
-        <TextInput underlineColorAndroid='transparent' placeholder ='Password' style={styles.textinput} />
+        <TextInput underlineColorAndroid='transparent' secureTextEntry={true} placeholder ='Password' style={styles.textinput} />
     
         <TouchableOpacity style={styles.loginbtn}>
           <Text>LOG IN</Text>
@@ -22,10 +22,6 @@ export default class Loginform extends React.Component {
 
         <TouchableOpacity style={styles.registerbtn}>
           <Text>REGISTER</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.forgotbutton}>
-          <Text>FORGOT PASSWORD</Text>
         </TouchableOpacity>
 
       </View>
@@ -38,11 +34,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   textinput: {
-    color: 'white',
+    color: 'black',
     alignSelf: 'stretch',
     padding: 12,
-    marginBottom: 10,
-    backgroundColor: 'rgba(255,255,255, 0.2)',
+    marginBottom: 5,
+    backgroundColor: '#fff',
     borderColor: '#fff',
     borderWidth: 1,
   },
@@ -55,13 +51,6 @@ const styles = StyleSheet.create({
   },
   registerbtn: {
     backgroundColor: '#bdc3c7',
-    alignSelf: 'stretch',
-    alignItems: 'center',
-    padding: 14,
-    marginTop: 5,
-  },
-  forgotbutton: {
-    backgroundColor: '#e74c3c',
     alignSelf: 'stretch',
     alignItems: 'center',
     padding: 14,

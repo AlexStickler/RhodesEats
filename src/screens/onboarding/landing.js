@@ -9,7 +9,7 @@ import {
   KeyboardAvoidingView
 } from 'react-native';
 
-import Loginform from './components/loginForm';
+import Loginform from './components/loginform';
 
 export default class App extends React.Component {
   render() {
