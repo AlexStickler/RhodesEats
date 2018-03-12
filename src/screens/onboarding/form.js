@@ -124,32 +124,38 @@ export default class App extends Component {
   render() {
     return (
       <KeyboardAvoidingView
-      style={styles.container}
-      behavior="padding"
+        style={styles.container}
+        behavior="padding"
       >
-      <View style={styles.container}>
-        <View style={styles.formStyle}>
-        <View style={{
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}>
-        <Image
-          source={{ uri: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Rhodes_College_seal.svg/1024px-Rhodes_College_seal.svg.png' }}
-          style={styles.image}//{ height: 200, width: 200 }}
-        />
-      </View>
-        <Form
-          ref={c => this._form = c}
-          type={User}
-          options={options}
-        />
 
-        <Button
-          title="Sign Up!"
-          onPress={this.handleSubmit}
-        />
-      </View>
-      </View>
+        <View style={styles.container}>
+
+          <View style={styles.formStyle}>
+
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+
+              <Image
+                source={{ uri: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Rhodes_College_seal.svg/1024px-Rhodes_College_seal.svg.png' }}
+                style={styles.image}//{ height: 200, width: 200 }}
+              />
+
+            </View>
+
+            <Form
+              ref={c => this._form = c}
+              type={User}
+              options={options}
+            />
+
+            <Button
+              title="Sign Up!"
+              onPress={this.handleSubmit}
+            />
+
+          </View>
+
+        </View>
+
       </KeyboardAvoidingView>
     );
   }
